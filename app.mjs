@@ -3,8 +3,6 @@ import cors from 'cors';
 import 'dotenv/config';
 
 import rootRouter from './routes/index.mjs';
-// import { stripeWebhookHandler } from './controllers/payments/stripeWebhook.mjs';
-// import { clearDbFromOldNotCompletedOrders } from './services/clearDbFromOldNotCompletedOrders.mjs';
 
 const PORT = process.env.PORT || 5000;
 
