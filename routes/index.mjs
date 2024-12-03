@@ -1,12 +1,11 @@
 import express from 'express';
 
-import { testRouter } from './testRouter.mjs';
 import { authRouter } from './authRouter.mjs';
+import { pokemonRouter } from './pokemonRoutes.mjs';
 
 const router = express.Router();
 
-router.use('/test', testRouter);
-
 router.use('/auth', authRouter);
+router.use('/pokemon', pokemonRouter);
 
 export default router;

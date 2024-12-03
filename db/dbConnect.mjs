@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const dbCOnnect = () => {
+const dbConnect = () => {
   const MONGO_URL = process.env.MONGO_URL;
 
   mongoose
@@ -13,4 +13,4 @@ const dbCOnnect = () => {
     });
 };
 
-export default dbCOnnect;
+export default dbConnect;
